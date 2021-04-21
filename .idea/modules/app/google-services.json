@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "969717916473",
+    "firebase_url": "https://smokefreesg-a0649.firebaseio.com",
+    "project_id": "smokefreesg-a0649",
+    "storage_bucket": "smokefreesg-a0649.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969717916473:android:0150a1c0c5761a8b483ee8",
+        "android_client_info": {
+          "package_name": "com.example.smokefreesg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969717916473-ou5puuama556s98unbc160eqbf03biv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smokefreesg",
+            "certificate_hash": "0a328865008e6873d70d4b5fec75b65fefcca3c7"
+          }
+        },
+        {
+          "client_id": "969717916473-hoj9n40i25ggtmfd6h3qg1q9h3k7j376.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd3mm4HOD4Y0vBHKv4dXdCM684fTxMkZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969717916473-hoj9n40i25ggtmfd6h3qg1q9h3k7j376.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

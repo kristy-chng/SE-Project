@@ -1,0 +1,6 @@
+include ':appDSAMaps'
+include ':appChallenge'
+include ':appDSA'
+include ':appTracking'
+include ':app'
+rootProject.name = "SmokeFreeSG"

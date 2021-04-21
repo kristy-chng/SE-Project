@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cameraTargetLat="1.3521"
+        app:cameraTargetLng="103.8198"
+        app:cameraZoom="11" />
+
+    <android.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_location"
+        android:queryHint="Location..."
+        android:iconifiedByDefault="false"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_box" />
+
+    <Button
+        android:id="@+id/pin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginRight="6.25dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="startActivity"
+        android:drawableLeft="@drawable/pin_icon"
+        android:background="@drawable/bg_button"
+        android:textColor="#808080"
+        android:text=" Pin it!" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/currloc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="22.5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/currloc_icon" />
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="6.25dp"
+        android:paddingLeft="8dp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/bg_button"
+        android:textColor="#808080"
+        android:text="Help!" />
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="How do I pin a new smoking area?"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:padding="30dp"
+        android:textSize="18dp"
+        android:text="1. Click on the 'Pin It!' button\n\n2. Click on the spot on the map where you want to drop the pin\n\n3. In the dialog box, give your new location a name\n\n4. Done!"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp"
+        android:padding="30dp"
+        android:text="* Please make sure that the smoking point to be added is legal. Thank you!"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="6.25dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:drawableLeft="@drawable/pin_icon"
+        android:background="@drawable/bg_button"
+        android:textColor="@android:color/white"
+        android:text="Back"
+        android:visibility="gone"/>
+
+</RelativeLayout>
